@@ -1,0 +1,27 @@
+{
+  "name": "fxstripjsdoc",
+  "version": "1.0.0",
+  "description": "A small utility to strip out jsDoc-style comments from a JavaScript file",
+  "main": "src/index.js",
+  "homepage": "https://github.com/MichaelRFox/fxStripjsDoc#readme",
+  "author": {
+    "name": "Michael R. Fox, Ph.D.",
+    "email": "fox.michael.r@gmail.com"
+  },
+  "directories": {
+    "src": "src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MichaelRFox/fxStripjsDoc"
+  },
+  "keywords": [
+    "jsDoc",
+    "comments"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "preversion": "git add -A",
+    "postversion": "git push -u origin master && git push --tags && npm publish"
+  }
+}
