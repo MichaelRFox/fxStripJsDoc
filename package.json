@@ -1,6 +1,6 @@
 {
   "name": "fxstripjsdoc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small utility to strip out jsDoc-style comments from a JavaScript file",
   "main": "src/index.js",
   "bin": "./src/index.js",

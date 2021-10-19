@@ -1,6 +1,6 @@
 # fxStripJsDoc
 
-[![npm version](https://badge.fury.io/js/fxStripJsDoc.svg)](https://badge.fury.io/js/fxStripJsDoc.js)
+[![npm version](https://badge.fury.io/js/fxstripjsdoc.svg)](https://badge.fury.io/js/fxstripjsdoc.js)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/fxstripjsdoc)
 ![npm](https://img.shields.io/npm/dw/fxstripjsdoc)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MichaelRFox/fxStripJsDoc)

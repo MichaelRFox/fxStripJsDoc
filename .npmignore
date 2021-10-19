@@ -1,3 +1,4 @@
 CHANGES.md
 .gitignore
 .npmignore
+*.sublime*
