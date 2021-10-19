@@ -38,7 +38,7 @@ The fxStripJsDoc utility takes one required argument, the path to the file to be
 ```json
 
 "scripts": {
-	"stripComments": "fxStripJsDoc ./dist/myFile.js"
+	"stripComments": "fxstripjsdoc ./dist/myFile.js"
 }
 
 ```

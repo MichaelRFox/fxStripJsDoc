@@ -10,6 +10,10 @@
 
 :warning: - Breaking Change
 
+# v1.0.1
+## 18 Oct, 2021
+- :bug: Added bin to package.json to facillitate running from package.json script.
+
 # v1.0.0
 ## 18 Oct, 2021
 - :boom: Initial commit.
