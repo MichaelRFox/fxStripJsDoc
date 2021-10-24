@@ -9,7 +9,7 @@
 
 ## Description
 
-fxStripJsDoc is used to strip out jsDoc-style comments from a javascript file. One may want to do this to reduce the size of a distribution file while retaining jsDoc comments in the source file. This utility will not strip out inline comments.
+fxStripJsDoc is used to strip out jsDoc-style comments from a JavaScript file. One may want to do this to reduce the size of a distribution file while retaining jsDoc comments in the source file. This utility will not strip out inline comments.
 
 Example: 
 
@@ -23,7 +23,7 @@ Example:
 /** Or single line comments like this one */
 
 // but not comments like this
-````
+```
 
 ## Installation
 

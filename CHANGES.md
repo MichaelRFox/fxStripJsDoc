@@ -10,6 +10,11 @@
 
 :warning: - Breaking Change
 
+# v1.1.0
+## 24 Oct, 2021
+- :hammer_and_wrench: Improved error handling.
+- :boom: Added code to remove leftover empty lines.
+
 # v1.03
 ## 18 Oct, 2001
 - :bug: Fixed issue where script would not run.
@@ -20,7 +25,7 @@
 
 # v1.0.1
 ## 18 Oct, 2021
-- :bug: Added bin to package.json to facillitate running from package.json script.
+- :bug: Added bin to package.json to facilitate running from package.json script.
 
 # v1.0.0
 ## 18 Oct, 2021

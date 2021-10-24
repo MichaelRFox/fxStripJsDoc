@@ -2,33 +2,27 @@
 
 var fs = require('fs');
 
-
-var regex = /(\/\*\*[\s\S]*?\*\/)/mg;
-var data;
-var file;
-var strippedData;
-var fileSpec;
+var regex0 = /(\/\*\*[\s\S]*?\*\/)/gm; // matches jsDoc comments
+var regex1 = /^(?:[\t ]*(?:\r?\n|\r))+/gm; // matches empty lines
 
 if (process.argv.length < 3) {
   console.log ('No file spec provided');
 } else {
-  fileSpec = process.argv[2];  
+  var fileSpec = process.argv[2];  
 };
 
 try {
+    fs.accessSync(fileSpec, fs.constants.F_OK);
 
-fs.accessSync(fileSpec, fs.constants.F_OK);
+    var file = fs.openSync(fileSpec,'r+', fs.constants.O_RDWR);
+    var data = fs.readFileSync(file, 'utf8');
+    var strippedData = data.replace(regex0, '');
+    strippedData = strippedData.replace(regex1, '');
 
-file = fs.openSync(fileSpec,'r+', fs.constants.O_RDWR);
-data = fs.readFileSync(file, 'utf8');
-strippedData = data.replace(regex, '');
+    fs.writeFileSync(fileSpec, strippedData);
 
-fs.writeFileSync(fileSpec, strippedData);
-
-console.log (`jsDoc comments removed from ${fileSpec}`);
-return 'succes';
+    console.log (`jsDoc comments removed from ${fileSpec}`);
+    return 'succes';
 } catch (error) {
-  console.log (`Error removing jsDoc comments removed from ${fileSpec}`);
-  return error;
+    console.error (`Error removing jsDoc comments from ${fileSpec}. System logged the following error: ${error}`);
 };
-
