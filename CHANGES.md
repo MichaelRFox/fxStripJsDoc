@@ -10,6 +10,10 @@
 
 :warning: - Breaking Change
 
+# v1.1.1
+## 3 Feb. 2020
+- :hammer_and_wrench: Imporoved regex.
+
 # v1.1.0
 ## 24 Oct, 2021
 - :hammer_and_wrench: Improved error handling.
